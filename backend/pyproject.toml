@@ -1,0 +1,9 @@
+[project]
+name = "k8s-backend"
+version = "0.1.0"
+description = "FastAPI Backend for K8s Microservices Lab"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "redis"
+]
