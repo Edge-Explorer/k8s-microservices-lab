@@ -1,7 +1,12 @@
 [project]
-name = "k8s-microservices-lab"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+name= "k8-backend"
+version= "0.1.0"
+description= "FastAPI Backend for K8s Microservices Lab"
+dependencies= [
+    "fastapi",
+    "uvicorn",
+    "redis"
+]
+
+[tool.setuptools]
+packages= ["app"]

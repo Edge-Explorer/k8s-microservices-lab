@@ -1,3 +1,94 @@
-# environment variables
+# IDEs and Editors
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Environment and Secrets
 .env
+*.env
+.env.*
+.env.local
+.env.production
+.env.staging
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+instance/
+_build/
+*.log
+*.bak
+*.orig
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+sdist/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+*.mo
+*.pot
+
+# Docker
+/docker-compose.override.yml
+/docker-compose.prod.yml
+.dockerenv
+.DS_Store
+
+# Kubernetes & Infrastructure Secrets
+.kube/
+kubeconfig
+*.kubeconfig
+kubeconfig.yaml
+service-account*.json
+.aws/
+.gcp/
+.azure/
+secrets/
+credentials/
+config/local.yaml
+*.p12
+*.pfx
+*.jks
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+
+# Packages
+node_modules/
+jspm_packages/
+web_modules/
+
+# Credentials
+credentials.json
+secrets.ini
+*.key
+*.pem
+
+# Temporary files
+*.tmp
+tmp/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Coverage data
+.coverage
+coverage.xml
