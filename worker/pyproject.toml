@@ -1,0 +1,7 @@
+[project]
+name = "k8s-worker"
+version = "0.1.0"
+description = "Python background worker for K8s Microservices Lab"
+dependencies = [
+    "redis"
+]
