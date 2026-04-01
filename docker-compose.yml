@@ -12,11 +12,15 @@ services:
     build: ./backend
     ports:
       - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
     depends_on:
       - redis
   
   # SERVICE 3: WORKER
   worker:
     build: ./worker
+    environment:
+      - REDIS_HOST=redis
     depends_on:
       - redis
