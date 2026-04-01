@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # SERVICE 1: REDIS
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  # SERVICE 2: BACKEND
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+  
+  # SERVICE 3: WORKER
+  worker:
+    build: ./worker
+    depends_on:
+      - redis
